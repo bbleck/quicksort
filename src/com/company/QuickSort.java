@@ -59,8 +59,10 @@ public class QuickSort {
         }
         // Now that we have partitioned the smaller from the larger values,
         // we swap the pivot value with border-1, which is the index of the last smaller value.
+        // This gives us and ordering of [smaller values][pivot value][larger values].
         swap(inputArr, low, border-1);
         // Then we return border-1 as the pivot index value, because that's where pivot is now located in the array.
+        // Once we find this index, we know that we have placed the pivot value into its final position in the sorted array.
         return border-1;
     }
 }
