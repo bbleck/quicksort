@@ -15,6 +15,10 @@ public class QuickSort {
         sort(inputArr, 0, inputArr.length-1);
     }
 
+    //Our recursive sort function.
+    //Termination condition:  if low > high.  This indicates there are no values to sort.
+    //The very general algorithm is: partition the array, then partition the partitions until there's nothing left to sort.
+    //This is what we mean by "divide and conquer" algorithm.
     private void sort(int[] inputArr, int low, int high) {
         if (low < high+1) {
             int pivotIndex = partition(inputArr, low, high);
