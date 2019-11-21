@@ -61,6 +61,8 @@ public class QuickSort {
                 swap(inputArr, i, border++);
             }
         }
+        // Remember that we moved our pivot to the low index!  The last thing we need to do is put it in the correct location.
+        // The correct location is between the smaller and larger values.
         // Now that we have partitioned the smaller from the larger values,
         // we swap the pivot value with border-1, which is the index of the last smaller value.
         // This gives us an ordering of [smaller values][pivot value][larger values].
