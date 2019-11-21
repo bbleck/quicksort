@@ -42,7 +42,7 @@ public class QuickSort {
     private int partition(int[] inputArr, int low, int high) {
         //initially move the pivot value to the low index (unnecessary, but useful for visualizing)
         swap(inputArr, low, getPivot(low, high));
-        int border = low + 1;//border is now the lowindex of the first non-pivot value
+        int border = low + 1;//border is now the index of the first non-pivot value
         //iterate through the array from border index to high index
         for (int i = border; i <= high; i++) {
             //our low index now holds the pivot, if the value at index i is less than our pivot value,
