@@ -45,12 +45,12 @@ public class QuickSort {
         int border = low + 1;//border is now the index of the first non-pivot value
         //iterate through the array from border index to high index
         for (int i = border; i <= high; i++) {
-            // Our low index now holds the pivot.
-            // If the value at index i is less than our pivot value,
-            // swap the value at i with the value at the current border index and then increment the border index by one.
+            // Our low index now holds the pivot value.
+            // We will loop through the array and check if the value at index i is less than our pivot value.
+            // If so, swap the value at i with the value at the current border index and then increment the border index by one.
             // The border is simply the first index where the values bigger than the pivot value begin.
-            // The values left of the border will all be smaller than the pivot and the values at the border and to its
-            // right will all be larger than the border.
+            // The values left of the border index will all be smaller than the pivot and the values at index positions
+            // equal to the border index and to it right will all be larger than the pivot value.
             // tldr: We iterate through the array and push smaller values than our pivot onto the left of the array,
             // keeping track of the border between smaller and bigger.
             if (inputArr[i] < inputArr[low]) {
